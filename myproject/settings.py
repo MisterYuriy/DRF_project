@@ -128,7 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static'))
 print(STATIC_ROOT)
-for root, dirs, files in os.walk("."):
+for root, dirs, files in os.walk(BASE_DIR):
     print(root, dirs, files)
     break
 STATIC_URL = '/static/'
