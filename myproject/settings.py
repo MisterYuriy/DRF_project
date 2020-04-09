@@ -131,7 +131,7 @@ print(STATIC_ROOT)
 for root, dirs, files in os.walk(BASE_DIR):
     print(root, dirs, files)
     break
-STATIC_URL = '/static/'
+STATIC_URL = os.path.join(BASE_DIR, 'static')
 
 
 STATICFILES_DIRS = (
